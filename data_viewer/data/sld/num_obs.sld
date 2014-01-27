@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd">
+   <NamedLayer>
+      <Name>Streams:Flow_Obs_12_2013</Name>
+      <UserStyle>
+         <Title>SLD Cook Book: Attribute-based polygon</Title>
+         <FeatureTypeStyle>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:PropertyIsLessThan>
+                     <ogc:PropertyName>num_obs</ogc:PropertyName>
+                     <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsLessThan>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FAFD9A</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FAFD9A</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:And>
+                     <ogc:PropertyIsGreaterThanOrEqualTo>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>0</ogc:Literal>
+                     </ogc:PropertyIsGreaterThanOrEqualTo>
+                     <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>365</ogc:Literal>
+                     </ogc:PropertyIsLessThan>
+                  </ogc:And>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FAED80</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+	         
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FAED80</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:And>
+                     <ogc:PropertyIsGreaterThanOrEqualTo>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>365</ogc:Literal>
+                     </ogc:PropertyIsGreaterThanOrEqualTo>
+                     <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>730</ogc:Literal>
+                     </ogc:PropertyIsLessThan>
+                  </ogc:And>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FBDE66</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FBDE66</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:And>
+                     <ogc:PropertyIsGreaterThanOrEqualTo>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>730</ogc:Literal>
+                     </ogc:PropertyIsGreaterThanOrEqualTo>
+                     <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>1825</ogc:Literal>
+                     </ogc:PropertyIsLessThan>
+                  </ogc:And>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FCCF4D</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FCCF4D</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:And>
+                     <ogc:PropertyIsGreaterThanOrEqualTo>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>1825</ogc:Literal>
+                     </ogc:PropertyIsGreaterThanOrEqualTo>
+                     <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>3650</ogc:Literal>
+                     </ogc:PropertyIsLessThan>
+                  </ogc:And>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FDC033</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FDC033</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:And>
+                     <ogc:PropertyIsGreaterThanOrEqualTo>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>3650</ogc:Literal>
+                     </ogc:PropertyIsGreaterThanOrEqualTo>
+                     <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>num_obs</ogc:PropertyName>
+                        <ogc:Literal>7300</ogc:Literal>
+                     </ogc:PropertyIsLessThan>
+                  </ogc:And>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FEB119</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FEB119</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            <Rule>
+               <ogc:Filter>
+                  <ogc:PropertyIsGreaterThan>
+                     <ogc:PropertyName>num_obs</ogc:PropertyName>
+                     <ogc:Literal>7350</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>
+               </ogc:Filter>
+               <PointSymbolizer>
+		         <Graphic>
+		           <Mark>
+		             <WellKnownName>circle</WellKnownName>
+		             <Fill>
+		               <CssParameter name="fill">#FFA200</CssParameter>
+		             </Fill>
+		           </Mark>
+		           <Size>6</Size>
+		         </Graphic>
+		       </PointSymbolizer>
+               <PolygonSymbolizer>
+                  <Fill>
+                     <CssParameter name="fill">#FFA200</CssParameter>
+                  </Fill>
+               </PolygonSymbolizer>
+            </Rule>
+            
+         </FeatureTypeStyle>
+      </UserStyle>
+   </NamedLayer>
+</StyledLayerDescriptor>
