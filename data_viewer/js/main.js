@@ -787,6 +787,24 @@ function setState(state){
 			if(basin_layer){
 				map.removeLayer(basin_layer);
 			}
+			
+			var myStyles = new OpenLayers.StyleMap({
+                "default": new OpenLayers.Style({
+                    pointRadius: "${type}", // sized according to type attribute
+                    fillColor: "#ffcc66",
+                    fillOpacity: "0",
+                    strokeColor: "#ff9933",
+                    strokeWidth: 2,
+                    graphicZIndex: 1
+                }),
+                "select": new OpenLayers.Style({
+                    fillColor: "#66ccff",
+                    strokeColor: "#3399ff",
+                    graphicZIndex: 2
+                })
+            });
+			
+			
 			var featurecollection = data;
 			var geojson_format = new OpenLayers.Format.GeoJSON(
 			{
@@ -794,7 +812,11 @@ function setState(state){
 				'externalProjection': new OpenLayers.Projection("EPSG:4326")
 		
 			});
-			basin_layer = new OpenLayers.Layer.Vector();
+			
+			basin_layer = new OpenLayers.Layer.Vector("Delineated Basin", {
+				  styleMap: myStyles
+				}
+			);
 			map.addLayer(basin_layer);
 		
 		

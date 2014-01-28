@@ -680,7 +680,7 @@ function getBounds() {
 	tmpBounds = map.getExtent();
 
 	//Max Left Longitude
-	maxLeft = 9000000
+	maxLeft = 504851290
 	for (var i=0;i<3;i++) {
 		tmpPos = new OpenLayers.Pixel;
 		tmpPos.x = lonPix[0];
@@ -705,7 +705,7 @@ function getBounds() {
 		}
 
 	//Max right Longitude
-	maxRight = -360
+	maxRight = -504851290
 	for (var i=0;i<3;i++) {
 		tmpPos = new OpenLayers.Pixel;
 		tmpPos.x = lonPix[2];
@@ -730,7 +730,7 @@ function getBounds() {
 		}
 
 	//Max Top Latitude
-	maxTop = -90
+	maxTop = -20037509
 	for (var i=0;i<3;i++) {
 		tmpPos = new OpenLayers.Pixel;
 		tmpPos.x = lonPix[i];
@@ -755,7 +755,7 @@ function getBounds() {
 		}
 
 	//Max Bottom Latitude
-	maxBottom = 9000000
+	maxBottom = 20037509
 	for (var i=0;i<3;i++) {
 		tmpPos = new OpenLayers.Pixel;
 		tmpPos.x = lonPix[i];
